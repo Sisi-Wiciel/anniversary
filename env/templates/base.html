@@ -1,16 +1,16 @@
 {% extends "bootstrap/base.html" %}
 
 <!-- define the logo -->
-<!-- {% block head %}
+{% block head %}
 {{ super() }}
-<link rel="shortcut icon" href="{{ url_for('static',filename='logo.ico') }}" type="image/x-icon">
-<link rel="shortcut icon" href="{{ url_for('static',filename='logo.ico') }}" type="image/x-icon">
-{% endblock %} -->
+<link rel="shortcut icon" href="{{ url_for('static',filename='image/logo.ico'),_external=True }}" type="image/x-icon">
+<link rel="shortcut icon" href="{{ url_for('static',filename='image/logo.ico'),_external=True }}" type="image/x-icon">
+{% endblock %}
 <!-- define localtime -->
-{% block scripts %}
+<!-- {% block scripts %}
 {{ super() }}
 {{ moment.include_moment() }}
-{% endblock %}
+{% endblock %} -->
 {% block title%}Flasky{% endblock %}
 {% block navbar %}
 <div class="navbar navbar-inverse" role="navigation">
